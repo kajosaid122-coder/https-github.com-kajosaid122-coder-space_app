@@ -1,0 +1,160 @@
+import '../ui/app_assets.dart';
+
+class PlanetModel {
+  final String name;
+  final String title;
+  final String description;
+  final String imagePath;
+  final String modelPath;
+  final String distanceFromSun;
+  final String lengthOfDay;
+  final String orbitalPeriod;
+  final String radius;
+  final String mass;
+  final String gravity;
+  final String surfaceArea;
+
+  const PlanetModel({
+    required this.name,
+    required this.title,
+    required this.description,
+    required this.imagePath,
+    required this.modelPath,
+    required this.distanceFromSun,
+    required this.lengthOfDay,
+    required this.orbitalPeriod,
+    required this.radius,
+    required this.mass,
+    required this.gravity,
+    required this.surfaceArea,
+  });
+
+  static List<PlanetModel> planets = [
+    const PlanetModel(
+      name: "Sun",
+      title: "The Sun: Our Solar System's Star",
+      description: "The Sun is the heart of our solar system, a massive ball of plasma that provides heat, light, and energy to everything within its gravitational pull.",
+      imagePath: AppAssets.sun,
+      modelPath: 'assets/models/sun.glb',
+      distanceFromSun: "0 km",
+      lengthOfDay: "0 hours",
+      orbitalPeriod: "0 Earth years",
+      radius: "695,700 km",
+      mass: "1.989 × 10³⁰ kg",
+      gravity: "274 m/s²",
+      surfaceArea: "6.09 × 10¹² km²",
+    ),
+    const PlanetModel(
+      name: "Mercury",
+      title: "Mercury: The Closest Planet",
+      description: "Mercury is the smallest planet in the Solar System and the closest to the Sun.",
+      imagePath: AppAssets.mercury,
+      modelPath: 'assets/models/mercury.glb',
+      distanceFromSun: "57.9 million km",
+      lengthOfDay: "1,407.66 hours",
+      orbitalPeriod: "0.24 Earth years",
+      radius: "2,438.7 km",
+      mass: "3.30 × 10²³ kg",
+      gravity: "3.7 m/s²",
+      surfaceArea: "7.48 × 10⁷ km²",
+    ),
+    const PlanetModel(
+      name: "Venus",
+      title: "Venus: Earth's Twin",
+      description: "Venus is often referred to as Earth's twin due to its similar size and composition. Its thick atmosphere traps heat, making it the hottest planet.",
+      imagePath: AppAssets.venus,
+      modelPath: 'assets/models/venus.glb',
+      distanceFromSun: "108.2 million km",
+      lengthOfDay: "5,832.20 hours",
+      orbitalPeriod: "0.62 Earth years",
+      radius: "6,051.8 km",
+      mass: "4.87 × 10²⁴ kg",
+      gravity: "8.87 m/s²",
+      surfaceArea: "4.60 × 10⁸ km²",
+    ),
+    const PlanetModel(
+      name: "Earth",
+      title: "Earth: Our Home Planet",
+      description: "Earth is the only known planet in the universe that supports life. Its unique combination of factors includes liquid water and a breathable atmosphere.",
+      imagePath: AppAssets.earth,
+      modelPath: 'assets/models/earth.glb',
+      distanceFromSun: "149.6 million km",
+      lengthOfDay: "24 hours",
+      orbitalPeriod: "1 Earth year",
+      radius: "6,371 km",
+      mass: "5.97 × 10²⁴ kg",
+      gravity: "9.81 m/s²",
+      surfaceArea: "5.10 × 10⁸ km²",
+    ),
+    const PlanetModel(
+      name: "Mars",
+      title: "Mars: The Red Planet",
+      description: "Mars, often called the Red Planet due to its reddish iron oxide, is a cold, rocky world with a thin atmosphere.",
+      imagePath: AppAssets.mars,
+      modelPath: 'assets/models/mars.glb',
+      distanceFromSun: "227.9 million km",
+      lengthOfDay: "24.62 hours",
+      orbitalPeriod: "1.88 Earth years",
+      radius: "3,389.5 km",
+      mass: "6.42 × 10²³ kg",
+      gravity: "3.71 m/s²",
+      surfaceArea: "1.45 × 10⁷ km²",
+    ),
+    const PlanetModel(
+      name: "Jupiter",
+      title: "Jupiter: The Gas Giant",
+      description: "Jupiter is the largest planet in our solar system, a gas giant composed primarily of hydrogen and helium.",
+      imagePath: AppAssets.jupiter,
+      modelPath: 'assets/models/jupiter.glb',
+      distanceFromSun: "778.5 million km",
+      lengthOfDay: "9.93 hours",
+      orbitalPeriod: "11.86 Earth years",
+      radius: "69,911 km",
+      mass: "1.898 × 10²⁷ kg",
+      gravity: "24.79 m/s²",
+      surfaceArea: "6.21 × 10¹⁰ km²",
+    ),
+    const PlanetModel(
+      name: "Saturn",
+      title: "Saturn: The Ringed Planet",
+      description: "Saturn is best known for its spectacular rings, which are composed of countless ice particles and rocks.",
+      imagePath: AppAssets.saturn,
+      modelPath: 'assets/models/saturn.glb',
+      distanceFromSun: "1.43 billion km",
+      lengthOfDay: "10.66 hours",
+      orbitalPeriod: "29.45 Earth years",
+      radius: "58,232 km",
+      mass: "5.68 × 10²⁶ kg",
+      gravity: "10.44 m/s²",
+      surfaceArea: "4.27 × 10¹⁰ km²",
+    ),
+    const PlanetModel(
+      name: "Uranus",
+      title: "Uranus: The Tilted Planet",
+      description: "Uranus is an ice giant with a unique axial tilt, causing its seasons to be extreme.",
+      imagePath: AppAssets.uranus,
+      modelPath: 'assets/models/uranus.glb',
+      distanceFromSun: "2.87 billion km",
+      lengthOfDay: "17.24 hours",
+      orbitalPeriod: "84.01 Earth years",
+      radius: "25,362 km",
+      mass: "8.68 × 10²⁵ kg",
+      gravity: "8.69 m/s²",
+      surfaceArea: "8.11 × 10⁹ km²",
+    ),
+    const PlanetModel(
+      name: "Neptune",
+      title: "Neptune: The Distant World",
+      description: "Neptune is the farthest planet from the Sun and is an ice giant with a deep blue color.",
+      imagePath: AppAssets.neptune,
+      modelPath: 'assets/models/neptune.glb',
+      distanceFromSun: "4.50 billion km",
+      lengthOfDay: "16.11 hours",
+      orbitalPeriod: "164.8 Earth years",
+      radius: "24,622 km",
+      mass: "1.02 × 10²⁶ kg",
+      gravity: "11.15 m/s²",
+      surfaceArea: "7.65 × 10⁹ km²",
+    ),
+  ];
+}
